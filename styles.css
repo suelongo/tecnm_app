@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2; /* gris */
+}
+
+.container {
+  text-align: center;
+  background-color: #ffffff; /* blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 100px;
+  
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: rgb(27, 53, 102); /* azul */
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* gris */
+  border-radius: 5px;
+  background-color: #ffffff; /* blanco */
+  color: #555; /* gris */
+}
+
+select:hover {
+  border-color: #999; /* gris más oscuro */
+}
+
+select:focus {
+  outline: none;
+  border-color: rgb(27, 53, 102); /* azul */
+}
+/* Agrega estos estilos al final de tu archivo styles.css */
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(27, 53, 102); /* azul */
+  color: #ffffff; /* blanco */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1b3566; /* azul más oscuro */
+}
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+  .container {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      max-height: 50%;
+  }
+  button{
+    margin-top: 2rem;
+  }
+}
