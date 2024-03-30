@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (carreraId) {
         // Llenar el primer contenedor con las materias
-        fillContainer("http://localhost:3000/materias/" + carreraId, "materiasContent");
+        fillContainer("https://api-tecnm.onrender.com/materias/" + carreraId, "materiasContent");
 
         // Llenar el segundo contenedor con el dropdown de especialidades
-        fillDropdown("http://localhost:3000/especialidades/" + carreraId, "especialidadesDropdown");
+        fillDropdown("https://api-tecnm.onrender.com/especialidades/" + carreraId, "especialidadesDropdown");
 
         // Manejar el cambio en el dropdown de especialidades
         const especialidadesDropdown = document.getElementById("especialidadesDropdown");
@@ -65,9 +65,9 @@ function fillMateriasPorEspecialidad(carreraId, especialidadId) {
 
     // Limpiar el contenedor de materias
     materiasContainer.innerHTML = "";
-
+    
     // Construir la URL de la API
-    const apiUrl = `http://localhost:3000/materias_especialidad/${carreraId}?especialidad=${especialidadId}`;
+    const apiUrl = `https://api-tecnm.onrender.com/materias_especialidad/${carreraId}?especialidad=${especialidadId}`;
 
     // Fetch de la API para obtener las materias por especialidad
     fetch(apiUrl)
