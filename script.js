@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const submitButton = document.getElementById("submitButton");
 
     // Fetch de la API para llenar el dropdown
-    fetch("http://localhost:3000/carreras")
+    fetch("https://api-tecnm.onrender.com/carreras")
         .then(response => response.json())
         .then(data => {
             // Rellenar el dropdown con los datos de la API
